@@ -47,7 +47,7 @@ button{
 #header{
     display: flex;
     width:100%;
-    padding:20px 20px;
+    padding:0px 20px;
     justify-content: space-around;
     align-items: center;
 }
@@ -81,7 +81,7 @@ button{
 #header button{
     background-color: var(--bg2);
 }
-#cart,#menu{
+#cart{
     border:1px solid rgb(123, 0, 123);
     color:white;
     padding:10px 10px;
@@ -93,6 +93,15 @@ button{
 }
 #menu{
     display: none;
+border:1px solid rgb(123, 0, 123);
+    color:white;
+    padding:10px 10px;
+    margin:0px 10px;
+    letter-spacing:1px;;
+    font-weight:bold;
+    font-size:20px;
+    border-radius: 15px;
+
 }
 #list{
     display: flex; 
