@@ -47,9 +47,9 @@ button{
 #header{
     display: flex;
     width:100%;
-    padding:0px 20px;
     justify-content: space-around;
     align-items: center;
+    padding:20px 20px;
 }
 
 #in{
@@ -81,7 +81,7 @@ button{
 #header button{
     background-color: var(--bg2);
 }
-#cart{
+#cart,#menu{
     border:1px solid rgb(123, 0, 123);
     color:white;
     padding:10px 10px;
@@ -93,15 +93,6 @@ button{
 }
 #menu{
     display: none;
-border:1px solid rgb(123, 0, 123);
-    color:white;
-    padding:10px 10px;
-    margin:0px 10px;
-    letter-spacing:1px;;
-    font-weight:bold;
-    font-size:20px;
-    border-radius: 15px;
-
 }
 #list{
     display: flex; 
@@ -132,17 +123,15 @@ border:1px solid rgb(123, 0, 123);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
     width:100%;
     height:75vh;
     
 }
-#bannerc{
-position: absolute;
-top:25%;
-right:20%;
 
-}
+
 #bannerc p:nth-child(1)
 {
     font-size: 40px;
@@ -433,7 +422,7 @@ text-align:left ;
 }
 #choose{
     width:100%;
-    margin: 30px;
+    margin: 30px 10px;
     text-align: center;
 }
 .chooseflex{
@@ -564,6 +553,9 @@ border-bottom: 1px solid rgba(175, 175, 175, 0.765);
 
 @media (max-width:992px)
 {
+    #menu{
+        display: block;
+    }
     #header{
         position: relative;
         justify-content: center;
@@ -571,9 +563,7 @@ border-bottom: 1px solid rgba(175, 175, 175, 0.765);
     #header #in,#list{
         display: none;
     }
-    #menu{
-        display: block;
-    }
+    
     #list2{
         width:100%;
         z-index:100;
@@ -618,19 +608,15 @@ border-bottom: 1px solid rgba(175, 175, 175, 0.765);
         background-repeat: no-repeat;
         background-position:center center;
         background-size: cover;
-        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width:100%;
         height:100vh;
         text-align: center;
         
     }
-    #bannerc{
-    position: absolute;
-    top:10;
-    left:10%;
-    text-align: center;
     
-    }
    
     #coupon{
         padding:20px;
